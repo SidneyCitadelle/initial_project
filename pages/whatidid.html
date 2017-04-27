@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What i did</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+    <nav>
+        <ul>
+            <li><a href="aboutme.html">About me</a></li>
+            <li><a href="whatidid.html">What i did</a></li>
+            <li><a href="contactme.html">Contact me</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+<h1>What i did,</h1>
+    <form>
+        <fieldset>
+            <legend>Vos Coordonnées</legend>
+            <div>
+                <label for="civilite">Civilité</label>
+                <input type="radio" id="civilite" name="civilite" id="civilite1" value="m"><span>M.</span>
+                <input type="radio" id="civilite" name="civilite" id="civilite2" value="mme"><span>Mme.</span>
+            </div>
+            <ul>
+                <li>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" placeholder="Nom et prénom"  required autofocus>
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@domaine.com" required autofocus>
+                </li>
+                <li>
+                    <label for="telephone">Téléphone</label>
+                    <input type="telephone" id="telephone" name="telephone" placeholder="+33" required autofocus>
+                </li>
+                <br>
+                <li>
+                    <label for="adresse">Adresse</label>
+                    <textarea rows="5" id="adresse"></textarea> 
+                </li>
+            </ul>
+
+            <div>
+                <label for="voitue">Type de voiture</label>
+                <input type="checkbox" name="voiture1" id="voiture1" value="lambo"><span>Lamborgini</span>
+                <input type="checkbox" name="voiture2" id="voiture2" value="ferrary"><span>Ferrari</span>
+            </div>
+            <div>
+                <label for="hungry">A manger</label>
+                <select id="hungry">
+                    <option value="mc_donalds">Mc Donalds</option>
+                    <option value="quick">Quick</option>
+                    <option value="burger_king">Burger King</option>
+                    <option value="kfc">KFC</option>
+                </select>
+            </div>
+            <input type="submit" name="submit">
+        </fieldset>
+    </form>
+</main>
+<footer>
+    <div class="sitemap">
+        <strong><i>Sitmap</i></strong>
+        <ul>
+            <li>About me</li>
+            <li>What i did</li>
+            <li>Contact me</li>
+            <li>Shop</li>
+        </ul>
+    </div>
+    <div class="sitemap">
+        <strong><i>Qqs images</i></strong>
+        <ul>
+            <li><a href="images/image1.jpg">Image 1</a></li>
+            <li><a href="images/image2.jpg">Image 2</a></li>
+            <li><a href="images/image3.jpg">Image 3</a></li>
+            <li><a href="images/image4.jpg">Image 4</a></li>
+        </ul>
+    </div>
+    <span>© all rights reserved</span>
+</footer>
+</body>
+</html>
