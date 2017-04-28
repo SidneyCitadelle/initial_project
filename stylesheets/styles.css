@@ -1,7 +1,19 @@
+        @font-face {
+            font-family: "Din OT sans-serif medium";
+            src: url("DINOTMedium.otf");
+        }
+
+        @font-face {
+            font-family: "Din OT sans-serif black";
+            src: url("DINOTBlack.otf");
+        }
+
         
         body{
-            background: lightgrey;
+            background: #44618e;
             margin: 0; 
+            font-family: "Din OT sans-serif medium", sans-serif;
+            
         }
 
         a{
@@ -12,27 +24,41 @@
         header{
             background: white;
             width: 100%;
-            height: 80px;
+            height: 10%;
+            min-height: 80px;
             z-index: 1;
             position: absolute;
-            box-shadow: 0 1px 4px grey;
+            box-shadow: 0 4px 12px #1f2d42;
+
         }
         
         nav{
             float: right;
             margin-top: 25px;
-            margin-right: 15%;
-            width: 30%;
+            width: 50%;
         }
 
         nav li{
             display: inline-block;
-            padding: 2% 4% 4% 4%;
+            padding: 2% 4% 2% 4%;
             font-size: 18px;
+            transition: opacity 1s;
+            background-color: black;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        nav li:hover {
+            background-color: black;
+            opacity: 100;
         }
         
         nav a{
             color: black;
+        }
+
+        nav li a:hover{
+            color: white;
         }
 
         input{
@@ -48,29 +74,41 @@
             margin-top: 80px;
             margin-left: 10%;
             width: 80%;
+            color: white;
         }
 
-        h1{
-            margin: 0;
-        }
 
         main ul{
             padding: 0;
         }
 
         p{
-            width: 300px;
-            text-align: justify;
-            margin: 0;
+            width: 45%;
+            text-align: right;
+            margin: 0 0 80px;
             font-size: 175%;
-            font-weight: bold;
+            font-weight: bold; 
         }
+
+        button{
+            clear: both;
+            border: 4px solid white;
+            padding: 10px 40px;
+            background: none;
+            font-family: "Din OT sans-serif black";
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            float: right;
+        }
+           
 
         .title-left{
             margin: 0;
             display: inline-block;
             font-size: 250%;
             padding-top: 100px;
+            font-family: "Din OT sans-serif black";
         }
 
         form{
@@ -107,18 +145,16 @@
             background: black;
             width: 100%;
             color: white;
-            position: absolute;
+            position: fixed;
             bottom: 0;
             font-size: 10px;
             height: 20px;
+            overflow: visible;
         }
 
         footer a{
             color: white;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+            overflow: visible;
         }
 
         footer span{
@@ -129,12 +165,12 @@
             width: 100px;
             height: 100px;
             float: left;
-            overflow: hidden;
             background-image: url(../images/logo.png);
             background-repeat: no-repeat; 
             background-size: contain;
             margin-top: 10px;
             margin-left: 10px;
+            transform: rotate(110deg), scale();
         }
 
         .sitemap{
@@ -142,4 +178,42 @@
             border-right: 1px solid white;
             width: 150px;
             display: inline-block;
+        }
+
+        .pagination{
+            float: right;
+            margin-right: 10%;
+            font-size: 200%;
+            top: -35px;
+            position: relative;
+        }
+
+        .pagination ul{
+            margin: 0;
+        }
+
+        .pagination li{
+            display: inline-block;
+            margin: 0;
+            padding: 10px 5px 10px 5px
+        }
+
+        .pagination li:hover{
+            background: black;
+        }
+
+        .active{
+            background: black;
+        }
+
+        .p-about{
+            font-size: 10px;
+            display: inline-block;
+            background: lightblue;
+        }
+
+        .p-cv{
+            font-size: 10px;
+            font-style: italic;
+
         }
