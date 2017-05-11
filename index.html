@@ -4,6 +4,7 @@
     <title>Homepage</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+    <script type="text/javascript" src="script.js"></script>
     <meta charset="utf-8">
 </head>
 <body>
@@ -22,18 +23,127 @@
 </header>
 <main>
     <div class="title-left">
-        <h1>Welcome,</h1>
+        <h2>Welcome,</h2>
     </div>
-    <p>
+    <span>
         Here is my portefolio 
-    </p>
+    </span>
     <a href="pages/whatidid.html">
         <button class="home-button"> 
             My projects
         </button>
     </a>
 </main>
+<section class="aboutme">
+    <div class="title-left">
+     <h2>About me,</h2>
+    </div>
+    <div class="p-about">
+        <p>
+            Expériences <br><br> sit amet, consectetur adipisicing elit,<br> sed do eiusmod
+            tempor incididunt<br> ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,<br>
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. <br>Duis aute irure dolor in <br>reprehenderit in voluptate velit <br>esse
+            cillum dolore eu fugiat nulla pariatur. 
+        </p>
+    </div>
+    <div class="p-cv">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla 
+        </p>
+    </div>
+</section>
+<section class="whatidid">
+    <div class="title-left">
+        <h2>What i did,</h2>
+    </div>
+    <div class="gallery">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="firefox.jpg" alt="" />
+                    <strong>Projet 1</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="opera.jpg" alt="" />
+                    <strong>Projet 2</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="opera.jpg" alt="" />
+                    <strong>Projet 3</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="opera.jpg" alt="" />
+                    <strong>Projet 4</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="opera.jpg" alt="" />
+                    <strong>Projet 5</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="opera.jpg" alt="" />
+                    <strong>Projet 6</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="opera.jpg" alt="" />
+                    <strong>Projet 7</strong>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="opera.jpg" alt="" />
+                    <strong>Projet 8</strong>
+                </a>
+            </li>
 
+        </ul>
+    </div>
+</section>
+<section class="contactme">
+    <div class="title-left">
+        <h2>Contact me,</h2>
+    </div>
+    <form method="post" name="formul" onsubmit="return verif();" action="#">
+        <div class="form-line">
+             <label for="gender">Your gender:</label>
+             <input type="radio" name="gender" id="gender-m">Male</input>
+             <input type="radio" name="gender" id="gender-f">Female</input>
+        </div>
+        <div class="form-line">
+            <label for="nom">Your name:</label>
+            <input type="text" id="nom" name="nom" />
+        </div>
+        <div class="form-line">
+            <label for="email">Your email:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-line">
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="5"></textarea>
+        </div>
+        
+        <div class="button">
+            <button type="submit" value="Send">Send it !</button>
+        </div>
+    </form>
+    
+</section>
 <footer>
     <div class="pagination">
         <ul>
